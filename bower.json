@@ -1,0 +1,12 @@
+{
+  "name": "weather-app",
+  "description": "",
+  "main": "gulfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}
