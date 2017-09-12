@@ -1,0 +1,14 @@
+$.ajax({
+        url: `http://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=e241fea983043a22d35a1c366f5a9058`,
+        type: 'GET',
+        data: {
+          format: 'json'
+        },
+        success: function(response) {
+          $('.showHumidity').text(`The humidity in seattle  is ${response.main.humidity}%`)
+          $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp}.`);
+        },
+        error: function() {
+          $('#showErrors').text("There was an error processing your request. Please try again.")
+        }
+      });

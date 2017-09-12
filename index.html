@@ -4,9 +4,24 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Template</title>
+    <script type="text/javascript" src="weather-interface.js"></script>
+    <title>Weather App</title>
   </head>
   <body>
-    <h1>Test</h1>
+    <div class="container">
+
+    <h1>Weather App</h1>
+    <label for="location">Enter a city location:</label>
+    <input id="location" type="text">
+    <button class="btn-success" id="weatherLocation">Get Current Humidity</button>
+    <br>
+    <div id = "showHumidity">
+    </div>
+    <div id = "showTemp">
+    </div>
+    <div id = "showErrors">
+    </div>
+  </div>
+
   </body>
 </html>
